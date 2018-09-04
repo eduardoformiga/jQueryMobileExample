@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jQuery Mobile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>PAGE HEADER 1</h1>
+        </div>
+        <div data-role="content">
+            <p>PAGE CONTENT 1</p>
+            <p>
+                <a href="#LeftDialog" data-rel="dialog">Open Page in Dialog</a>
+            </p>
+            <p>
+                <a href="#RightClose" data-rel="dialog">Open Page in Dialog With Right and close button (X)</a>
+            </p>
+            <p>
+                <a href="#NoClose" data-rel="dialog">Open Page in Dialog without Close Button (X)</a>
+            </p>
+            <p>
+                <a href="#SquareDialog" data-rel="dialog" data-corners="false">Open Page in Square Dialog</a>
+            </p>
+        </div>
+        <div data-role="footer">
+            <h1>PAGE FOOTER 1</h1>
+        </div>
+    </div>
+
+    <div data-role="page" id="LeftDialog">
+        <div data-role="header">
+            <h1>PAGE HEADER</h1>
+        </div>
+        <div data-role="content">
+            <p>PAGE CONTENT</p>
+            <p>
+                <a href="#page1">Go to page 1</a>
+            </p>
+        </div>
+        <div data-role="footer">
+            <h1>PAGE FOOTER</h1>
+        </div>
+    </div>
+
+    <div data-role="page" data-close-btn="right" id="RightClose">
+        <div data-role="header">
+            <h1>PAGE HEADER</h1>
+        </div>
+        <div data-role="content">
+            <p>PAGE CONTENT</p>
+            <p>
+                <a href="#page1">Go to page 1</a>
+            </p>
+        </div>
+        <div data-role="footer">
+            <h1>PAGE FOOTER</h1>
+        </div>
+    </div>
+
+    <div data-role="page" data-close-btn="none" id="NoClose">
+        <div data-role="header">
+            <h1>PAGE HEADER</h1>
+        </div>
+        <div data-role="content">
+            <p>PAGE CONTENT</p>
+            <p>
+                <a href="#" data-rel="back">Close</a>
+            </p>
+        </div>
+        <div data-role="footer">
+            <h1>PAGE FOOTER</h1>
+        </div>
+    </div>
+
+    <div data-role="page" id="SquareDialog" data-corners="false">
+            <div data-role="header">
+                <h1>PAGE HEADER</h1>
+            </div>
+            <div data-role="content">
+                <p>PAGE CONTENT</p>
+                <p>
+                    <a href="#" data-rel="back">Close</a>
+                </p>
+            </div>
+            <div data-role="footer">
+                <h1>PAGE FOOTER</h1>
+            </div>
+        </div>
+    
+
+</body>
+
+</html>

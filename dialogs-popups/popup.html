@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jQuery Mobile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>PAGE HEADER 1</h1>
+        </div>
+        <div data-role="content">
+            <h1>PAGE CONTENT 1</h1>
+            <a href="#popup1" data-rel="popup">Popup</a>
+            <br/>
+            <a href="#popup2" data-rel="popup">Popup with close button (X)</a>
+            <br/>
+            <a href="#popup2" data-rel="popup" data-position-to="window">Popup positioned</a>
+            <br/>
+        </div>
+
+        <div data-role="popup" id="popup1">
+            <p>Here is some text to be shown inside a popup</p>
+        </div>
+
+        <div data-role="popup" id="popup2">
+            <p>Here is some text to be shown inside a popup</p>
+            <p><a href="#" data-rel="back">Close</a></p>
+        </div>
+
+        <div data-role="footer">
+            <h1>PAGE FOOTER 1</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>
